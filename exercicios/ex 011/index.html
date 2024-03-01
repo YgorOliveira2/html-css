@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Midias em HTML5</title>
+</head>
+<body>
+    <h1>Imagem dinâmica
+        <p>Tente abrir essa imagem em vários dispositivos, ou simplesmente aumenta e diminua o tamanho do seu navegador.</p>
+    </h1>
+
+    <picture>
+        <source media="(max-width:750px)" srcset="imagens/foto-p.png" type="image/png">
+        <source media="(max-width:1050px)" srcset="imagens/foto-m.png" type="image/png">
+     <img src="Imagens/foto-g.png" alt="Imagem flexivel">
+
+    </picture>
+    <h1>Reproduzindo áudios</h1>
+    <p>Vamos aprender a reproduzir áudios em HTML5</p>
+    <audio src="midia/Lazy Laura - Quincas Moreira.mp3" controls autoplay></audio>
+    <!--MP3 WAV OGG-->
+    <h1>Ou também</h1>
+    <audio preload="metadata"controls autoplay>
+     <source src="midia/Lazy Laura - Quincas Moreira.mp3" type="audio/mpeg">
+     <source src="midia/Lazy Laura - Quincas Moreira.ogg" type="audio/ogg">
+     <source src="midia/Lazy Laura - Quincas Moreira.wav" type="audio/wav">
+     <p>Infelizmente seu navegador não é compativel com o áudio</p>
+    <a href="midia/Lazy Laura - Quincas Moreira.mp3">Baixe o seu arquivo MP3 aqui!</a>
+
+
+    </audio> 
+</body>
+</html>
