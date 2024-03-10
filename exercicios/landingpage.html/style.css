@@ -1,0 +1,38 @@
+@charset "UTF-8";
+
+
+
+body{
+    background-image: linear-gradient(to right, black, white);
+}
+
+h1{
+    text-align: center;
+    background-image: linear-gradient(to right, rgb(88, 77, 77), transparent);
+   
+}
+
+div{
+    width:400px ;
+    height:400px ;
+    margin: auto;
+    border: 1px solid black;
+    border-radius: 30px;
+    box-shadow: 20px 20px 20px black;
+
+}
+
+ p{
+    padding: 10px;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+    padding: 10px;
+}
+
+a:hover{
+    text-decoration: underline;
+    color: blue;
+}
