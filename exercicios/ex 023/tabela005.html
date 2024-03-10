@@ -3,9 +3,82 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Exercicios de Tabela</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        table{
+            width: 500px;
+            border-collapse: collapse;
+        }
+
+        caption{
+            font-size: 1.3em;
+            font-weight: bold;
+            padding: 8px;
+        }
+
+        th, td{
+            border: 1px solid black;
+            padding: 8px;
+        }
+
+        .cnome{
+            background-color: aqua;
+        }
+
+        .csexo{
+            background-color: aquamarine;
+            
+        }
+    </style>
 </head>
 <body>
-    
+    <h1>Exercicio de tabela</h1>
+
+    <table>
+        <colgroup>
+            <col class="cnome">
+            <col class="cidade">
+            <col class="csexo">
+            <col class="cprof">
+        </colgroup>
+
+        <caption>Cadastro</caption>
+        <tr>
+            <th scope="col">Nome</th>
+            <th scope="col">Idade</th>
+            <th scope="col">Sexo</th>
+            <th scope="col">Profissão</th>
+        </tr>
+
+        <tr>
+            <td>Ana Maria</td> 
+            <td>25</td>
+            <td>F</td>
+            <td>Jornalista</td>
+        </tr>
+
+        <tr>
+            <td>João</td>
+            <td>19</td>
+            <td>M</td>
+            <td>Pedreiro</td>
+        </tr>
+        <tr>
+            <td>Ygor</td>
+            <td>18</td>
+            <td>M</td>
+            <td>Programador</td>
+        </tr>
+        <tr>
+            <td>Jonathan</td>
+            <td>30</td>
+            <td>M</td>
+            <td>Arquiteto</td>
+        </tr>
+    </table>
 </body>
 </html>
