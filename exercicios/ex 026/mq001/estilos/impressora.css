@@ -1,0 +1,26 @@
+@charset "UTF-8";
+
+/* Estilo para impressoras, essas configuraçoes so vao aparecer quando alguem for imprimir */
+
+*{
+    margin:10px;
+    padding:10px;
+}
+
+html{
+    font-family: 'Courier New', Courier, monospace; /*fonte monoespaçada e com serifa, facil de se ler no papel*/
+    font-size: 1.5em;
+    line-height: 1.5em;
+}
+
+menu{
+    display: none; /*nao vai aparecer o menu quando for imprimir, pq n faz sentido*/
+}
+
+article::after{
+    content: 'Esse artigo foi impresso através do site www.cursoemvideo.com';
+}
+
+article{
+    width: 100%;
+}
