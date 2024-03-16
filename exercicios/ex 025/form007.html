@@ -7,7 +7,7 @@
 </head>
 <body>
     <h1>Exemplo de formulário</h1>
-    <form action="cadastro.php" autocomplete="on" method="get">
+    <form action="cadastro.php" autocomplete="on" method="post">
         <p>
             <label for="iest">Estado</label>
             <select name="estado" id="iest">
@@ -28,10 +28,21 @@
         </p>
        <p>
         <label for="iprog">Profissão</label>
-        <input type="text" name="Profissão" id="iprof">
-        
+        <input type="text" name="Profissão" id="iprof" list="listprof">
+        <datalist id="listprof">
+            <option >Administrador</option>
+            <option >Professor</option>
+            <option >Desenvolvedor</option>
+            <option >Contador</option>
+        </datalist>
        </p>
        
+       <p>           
+            <label for="imsg">Mensagem</label><br>
+            <textarea name="msg" id="imsg" cols="30" rows="10" minlength="30" maxlength="120"></textarea>
+        
+       </p>
+
         <p>
             <input type="submit" value="Enviar">
             <input type="reset" value="Limpar">
