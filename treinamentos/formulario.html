@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <div id="form">
+        <h1>Preencha o Formulário</h1>
+        <form action="cadastro.php" method="post" autocomplete="on">
+            <p>
+                <label for="inome">Nome</label>
+                <input type="text" name="Nome" id="inome" required autocomplete="name">
+            </p>
+    
+    
+        <p>
+            <label  for="iemail">Email</label>
+            <input  type="email" name="email" id="iemail" required autocomplete="email">
+        </p>
+    
+    
+        <p>
+            <label for="iidade">Idade</label>
+            <input type="number" name="Idade" id="iidade" placeholder="(Opcional)">
+        </p>
+        <p>
+            <label for="imsg">Biografia</label> <br>
+            <textarea name="msg" id="imsg" cols="30" rows="10" minlength="30" maxlength="100" placeholder="Fale sobre você"></textarea>
+        </p>
+
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+    </div>
+</form>
+</body>
+</html>

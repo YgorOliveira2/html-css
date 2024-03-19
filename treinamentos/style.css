@@ -1,0 +1,33 @@
+@charset "UTF-8";
+
+/* Paleta de cores:
+    roxo: #5F2CF2
+    azul: #2C39F2
+    azul claro: #2CB6F2
+
+
+*/
+#form{
+    background-color: white;
+}
+
+
+body{
+    background-image: linear-gradient(to top, #5F2CF2, #2CB6F2 );
+    height: 98.3vh;
+}
+
+h1{
+    text-align: center;
+    font-size: 1.5em;
+    color: #2C39F2;
+}
+
+#form{
+    border: 1px solid black;
+    width: 300px;
+    height: 700px;
+    padding: 10px;
+    margin: auto;
+    border-radius: 10px;
+}
